@@ -8,6 +8,23 @@ When teaching the game, make this point early and repeat it during the first few
 
 This keeps the game simple enough for a 2-hour AWWA workshop while still teaching both sides of the tabletop scenario.
 
+## Product/rarity note: training boxes vs collector boxes
+
+For AWWA and other tabletop training boxes, the card mix should stay practical and training-focused.
+
+Important note:
+
+> Training boxes should include Common, Uncommon, and Rare cards needed for the tabletop scenario. Legendary cards should be reserved for Collector Boxes unless a specific training scenario requires one.
+
+This keeps training decks balanced, repeatable, and easier to teach. Collector Boxes can include higher-impact Legendary cards, alternate art, special scenarios, and premium versions without making the base training experience too complex or too swingy.
+
+Recommended explanation:
+
+- Common cards teach core concepts and appear often.
+- Uncommon cards introduce useful tools, operators, and scenario variety.
+- Rare cards create stronger but still teachable moments.
+- Legendary cards are special collector/scenario cards and should not be required for normal training-box play.
+
 ## Red Team learning path
 
 Red Team cards follow the Cyber Kill Chain as a story arc:
