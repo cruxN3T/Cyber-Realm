@@ -1,0 +1,55 @@
+deck_name,side,card_id,card_name,copies,role,notes
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-001,Well,1,Asset,Infrastructure resource asset
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-002,Water Tower,1,Asset,Scenario-critical asset
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-003,Pump Station,1,Asset,Operational movement and support
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-004,Chlorination Unit,1,Asset,High-value safety asset
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-005,RTU or PLC,1,Asset,Controller asset
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-006,Gateway,1,Asset,Remote access path
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-007,Operator Laptop,1,Asset,Endpoint risk asset
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-008,Basic Firewall,1,Asset,Network protection asset
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-009,SCADA Web Interface,1,Asset,Application exposure asset
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-010,Password Reset,1,Defense,Credential recovery
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-011,Basic MFA,1,Defense,Credential protection
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-012,Vendor Support Contract,1,Defense,Recovery support
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-013,Port Closure,1,Defense,Recon/network counter
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-014,Port Scanner,1,Tool,Defensive scan
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-015,Deep Packet ICS Monitor,1,Tool,Advanced detect
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-016,Antivirus,1,Tool,Malware counter
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-017,Modbus TCP,1,Protocol,Legacy ICS protocol risk
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-018,Port 23,1,Protocol,Legacy exposure
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-019,Telnet,1,Protocol,Insecure remote protocol
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-020,Port 80,1,Protocol,Web exposure
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-021,HTTP,1,Protocol,Plain web access
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-022,IT Admin,1,Operator,Network defense operator
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-023,Field Technician,1,Operator,Infrastructure recovery operator
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-024,Infrastructure Engineer,1,Operator,Protocol and recovery operator
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-025,Operations Budget,6,Realm,Core resource
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-026,Capital Funding,1,Realm,Asset upgrade resource
+Small Utility 32 vs Script Kiddie 32,Blue Team,ICS-WATER-SB-027,Federal Assistance,1,Realm,Burst resource
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-001,Internet Exposure Search,1,Recon,Find exposed assets
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-002,Port Scan,1,Recon,Reveal assets
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-003,Default Login Attempt,2,Credential Attack,Pressure legacy protocols
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-004,Password Spray,1,Credential Attack,Disable operators without MFA
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-005,Misconfigured Remote Access,1,Remote Access Attack,Bypass defense without MFA
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-006,Public Exploit,2,Exploit Attack,Damage endpoint/legacy assets
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-007,Phishing the Operator,1,Social Attack,Disable operator
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-008,Exposed Web Interface,1,Application Attack,Target SCADA surface
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-009,Known Exploit Copy Paste,1,Exploit Attack,Combo with recon
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-010,Noisy Malware Drop,1,Malware Attack,High damage with detection tradeoff
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-011,Flat Network Pivot,1,Network Attack,Punish missing segmentation
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-012,Credential Reuse,1,Credential Attack,Combo with credential attacks
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-013,Unpatched Service,1,Exploit Attack,Patch lesson
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-014,Open Remote Port,1,Network Attack,Reveal hand if not closed
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-015,Weak Password Policy,1,Event,Boost credential attacks
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-016,Alert Fatigue,1,Event,Pressure defender resources
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-017,Forgotten Test Page,1,Application Attack,Asset inventory lesson
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-018,Exposed Backup Share,1,Cloud Attack,Recovery pressure
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-019,Stale Vendor Account,1,Infrastructure Attack,Vendor access lesson
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-020,Simple Defacement,1,Internet Attack,Public trust pressure
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-021,Attacker Brag Post,1,Event,Card draw with defender intel
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-022,Outdated Browser Plugin,1,Endpoint Attack,Operator laptop pressure
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-023,Weak Firewall Rule,1,Network Attack,Exhaust firewall
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-024,Unsecured Status Page,1,Internet Attack,Reveal operational details
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-025,Scripted Attack Run,1,Event,Extra attack tempo
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-026,Old Protocol Abuse,1,Legacy Attack,Punish legacy protocols
+Small Utility 32 vs Script Kiddie 32,Red Team,ICS-WATER-SR-027,Copycat Attack,1,Event,Recover common attack
