@@ -1,0 +1,8 @@
+realm,color,notes
+Infrastructure,Green,Water systems physical infrastructure OT and utility operations
+Cloud,Yellow,Cloud services hosted systems and scalable resources
+Internet,Blue,Public web exposure communication and external access
+Network,Black,Routing segmentation traffic movement and network defenses
+Application,White/Grey,Applications portals dashboards databases and software logic
+Endpoint,Red,Workstations laptops operator devices and local system defense
+Legacy,Brown,Older systems historical technology and outdated protocols
