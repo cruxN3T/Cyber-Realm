@@ -1,0 +1,130 @@
+deck_size,utility_size,card_name,category,realm,notes
+32,Small Utility,Well,Asset,Infrastructure,Original defense-side source concept
+32,Small Utility,Water Tower,Asset,Infrastructure,Original defense-side source concept
+32,Small Utility,Pump Station,Asset,Infrastructure,Original defense-side source concept
+32,Small Utility,Chlorination Unit,Asset,Infrastructure,Original defense-side source concept
+32,Small Utility,RTU or PLC,Asset,Infrastructure,Original defense-side source concept
+32,Small Utility,Gateway,Asset,Infrastructure,Original defense-side source concept
+32,Small Utility,Operator Laptop,Asset,Endpoint,Original defense-side source concept
+32,Small Utility,Basic Firewall,Asset,Network,Original defense-side source concept
+32,Small Utility,SCADA Web Interface,Asset,Application,Original defense-side source concept
+32,Small Utility,Password Reset,Defense,Endpoint,Original defense-side source concept
+32,Small Utility,Basic MFA,Defense,Internet,Original defense-side source concept
+32,Small Utility,Vendor Support Contract,Defense,Infrastructure,Original defense-side source concept
+32,Small Utility,Port Closure,Defense,Network,Original defense-side source concept
+32,Small Utility,Port Scanner,Tool,Network,Original defense-side source concept
+32,Small Utility,Deep Packet ICS Monitor,Tool,Infrastructure,Original defense-side source concept
+32,Small Utility,Antivirus,Tool,Endpoint,Original defense-side source concept
+32,Small Utility,Modbus TCP,Protocol,Infrastructure,Original defense-side source concept
+32,Small Utility,Port 23,Protocol,Network,Original defense-side source concept
+32,Small Utility,Telnet,Protocol,Internet,Original defense-side source concept
+32,Small Utility,Port 80,Protocol,Network,Original defense-side source concept
+32,Small Utility,HTTP,Protocol,Internet,Original defense-side source concept
+32,Small Utility,IT Admin,Operator,Network,Original defense-side source concept
+32,Small Utility,Field Technician,Operator,Infrastructure,Original defense-side source concept
+32,Small Utility,Infrastructure Engineer,Operator,Infrastructure,Original defense-side source concept
+32,Small Utility,Operations Budget,Realm,Infrastructure,Resource card
+32,Small Utility,Capital Funding,Realm,Infrastructure,Resource card
+32,Small Utility,Federal Assistance,Realm,Infrastructure,Resource card
+52,Medium Utility,Well,Asset,Infrastructure,Original defense-side source concept
+52,Medium Utility,Water Tower,Asset,Infrastructure,Original defense-side source concept
+52,Medium Utility,Pump Station,Asset,Infrastructure,Original defense-side source concept
+52,Medium Utility,Chlorination Unit,Asset,Infrastructure,Original defense-side source concept
+52,Medium Utility,RTU or PLC,Asset,Infrastructure,Original defense-side source concept
+52,Medium Utility,Gateway,Asset,Infrastructure,Original defense-side source concept
+52,Medium Utility,Access Point,Asset,Network,Original defense-side source concept
+52,Medium Utility,Engineering Workstation,Asset,Endpoint,Original defense-side source concept
+52,Medium Utility,Treatment Plant,Asset,Infrastructure,Original defense-side source concept
+52,Medium Utility,SCADA Web Interface,Asset,Application,Original defense-side source concept
+52,Medium Utility,Operator Laptop,Asset,Endpoint,Original defense-side source concept
+52,Medium Utility,Enterprise Firewall,Asset,Network,Original defense-side source concept
+52,Medium Utility,Billing Database,Asset,Application,Original defense-side source concept
+52,Medium Utility,Email Server,Asset,Application,Original defense-side source concept
+52,Medium Utility,Backup,Defense,Infrastructure,Original defense-side source concept
+52,Medium Utility,Redundant Backup,Defense,Cloud,Original defense-side source concept
+52,Medium Utility,MFA,Defense,Internet,Original defense-side source concept
+52,Medium Utility,Water Quality Monitor,Defense,Infrastructure,Original defense-side source concept
+52,Medium Utility,Port Scanner,Tool,Network,Original defense-side source concept
+52,Medium Utility,Vulnerability Scanner,Tool,Network,Original defense-side source concept
+52,Medium Utility,Intrusion Detection System,Tool,Network,Original defense-side source concept
+52,Medium Utility,IoT Scanner,Tool,Infrastructure,Original defense-side source concept
+52,Medium Utility,Modbus,Protocol,Infrastructure,Original defense-side source concept
+52,Medium Utility,Port 443,Protocol,Network,Original defense-side source concept
+52,Medium Utility,HTTPS,Protocol,Internet,Original defense-side source concept
+52,Medium Utility,DNP3,Protocol,Infrastructure,Original defense-side source concept
+52,Medium Utility,IT Admin,Operator,Network,Original defense-side source concept
+52,Medium Utility,OT Engineer,Operator,Infrastructure,Original defense-side source concept
+52,Medium Utility,SOC Analyst,Operator,Infrastructure,Original defense-side source concept
+52,Medium Utility,Field Technician,Operator,Infrastructure,Original defense-side source concept
+52,Medium Utility,Operations Budget,Realm,Infrastructure,Resource card
+52,Medium Utility,Capital Funding,Realm,Infrastructure,Resource card
+52,Medium Utility,Emergency Funding,Realm,Infrastructure,Resource card
+52,Medium Utility,Federal Assistance,Realm,Infrastructure,Resource card
+86,Large Utility,Well,Asset,Infrastructure,Original defense-side source concept
+86,Large Utility,Water Tower,Asset,Infrastructure,Original defense-side source concept
+86,Large Utility,Pump Station,Asset,Infrastructure,Original defense-side source concept
+86,Large Utility,Chlorination Unit,Asset,Infrastructure,Original defense-side source concept
+86,Large Utility,RTU or PLC,Asset,Infrastructure,Original defense-side source concept
+86,Large Utility,Gateway,Asset,Infrastructure,Original defense-side source concept
+86,Large Utility,Access Point,Asset,Network,Original defense-side source concept
+86,Large Utility,Engineering Workstation,Asset,Endpoint,Original defense-side source concept
+86,Large Utility,Treatment Plant,Asset,Infrastructure,Original defense-side source concept
+86,Large Utility,SCADA Web Interface,Asset,Application,Original defense-side source concept
+86,Large Utility,Operator Laptop,Asset,Endpoint,Original defense-side source concept
+86,Large Utility,Next-Gen Firewall,Asset,Network,Generic defensive asset name
+86,Large Utility,Billing Database,Asset,Application,Original defense-side source concept
+86,Large Utility,Email Server,Asset,Application,Original defense-side source concept
+86,Large Utility,Directory Services,Asset,Application,Generic replacement for brand-specific directory naming
+86,Large Utility,Scheduled Backup,Defense,Cloud,Original defense-side source concept
+86,Large Utility,DMZ,Defense,Network,Original defense-side source concept
+86,Large Utility,Basic Backup,Defense,Infrastructure,Original defense-side source concept
+86,Large Utility,Cloud Backup,Defense,Cloud,Original defense-side source concept
+86,Large Utility,Redundant Backup,Defense,Infrastructure,Original defense-side source concept
+86,Large Utility,Deep Packet ICS Monitor,Tool,Infrastructure,Original defense-side source concept
+86,Large Utility,Network Monitor,Defense,Network,Original defense-side source concept
+86,Large Utility,User Training,Defense,Endpoint,Original defense-side source concept
+86,Large Utility,MFA,Defense,Internet,Original defense-side source concept
+86,Large Utility,Patch Management,Tool,Endpoint,Original defense-side source concept
+86,Large Utility,Water Quality Monitor,Tool,Infrastructure,Original defense-side source concept
+86,Large Utility,SOC Analyst,Operator,Infrastructure,Original defense-side source concept
+86,Large Utility,Privileged Access Management,Tool,Application,Generic naming
+86,Large Utility,Port Scanner,Tool,Network,Original defense-side source concept
+86,Large Utility,Vulnerability Scanner,Tool,Network,Original defense-side source concept
+86,Large Utility,Security Event Monitoring,Protocol,Infrastructure,Generic naming
+86,Large Utility,Endpoint Detection,Protocol,Endpoint,Generic naming
+86,Large Utility,Intrusion Detection System,Protocol,Network,Generic naming
+86,Large Utility,Incident Response Plan,Protocol,Infrastructure,Original defense-side source concept
+86,Large Utility,Threat Intelligence,Protocol,Infrastructure,Original defense-side source concept
+86,Large Utility,Port 443,Protocol,Network,Original defense-side source concept
+86,Large Utility,HTTPS,Protocol,Internet,Original defense-side source concept
+86,Large Utility,SNMPv3,Protocol,Infrastructure,Original defense-side source concept
+86,Large Utility,OPC UA,Protocol,Infrastructure,Original defense-side source concept
+86,Large Utility,OT Engineer,Operator,Infrastructure,Original defense-side source concept
+86,Large Utility,CISO,Operator,Infrastructure,Original defense-side source concept
+86,Large Utility,ICS Security Engineer,Operator,Infrastructure,Original defense-side source concept
+86,Large Utility,Incident Responder,Operator,Endpoint,Original defense-side source concept
+86,Large Utility,IT Admin,Operator,Network,Original defense-side source concept
+86,Large Utility,Operations Budget,Realm,Infrastructure,Resource card
+86,Large Utility,Capital Funding,Realm,Infrastructure,Resource card
+86,Large Utility,Emergency Funding,Realm,Infrastructure,Resource card
+86,Large Utility,Federal Assistance,Realm,Infrastructure,Resource card
+86,Large Utility,Password Reset,Defense,Endpoint,Original defense-side source concept
+86,Large Utility,Patch Manager,Operator,Endpoint,Original defense-side source concept
+86,Large Utility,Malware Analysis,Tool,Application,Original defense-side source concept
+86,Large Utility,Packet Analysis,Tool,Infrastructure,Original defense-side source concept
+86,Large Utility,Packet Capture,Tool,Infrastructure,Original defense-side source concept
+86,Large Utility,Intrusion Prevention System,Defense,Network,Generic naming
+86,Large Utility,Water Treatment Operator,Operator,Infrastructure,Original defense-side source concept
+86,Large Utility,Field Technician,Operator,Infrastructure,Original defense-side source concept
+86,Large Utility,Port Closure,Defense,Network,Original defense-side source concept
+86,Large Utility,Incident Response Playbook,Defense,Infrastructure,Original defense-side source concept
+86,Large Utility,Port 80,Protocol,Network,Original defense-side source concept
+86,Large Utility,HTTP,Protocol,Internet,Original defense-side source concept
+86,Large Utility,Network Segmentation,Defense,Network,Original defense-side source concept
+86,Large Utility,Network Intrusion Detection,Defense,Network,Generic naming
+86,Large Utility,Log Monitor,Defense,Infrastructure,Original defense-side source concept
+86,Large Utility,DNP3,Protocol,Infrastructure,Original defense-side source concept
+86,Large Utility,Modbus,Protocol,Infrastructure,Original defense-side source concept
+86,Large Utility,Supply Chain Risk Management,Protocol,Infrastructure,Original defense-side source concept
+86,Large Utility,Awareness Training,Event,Infrastructure,Original defense-side source concept
+86,Large Utility,IoT Scanner,Tool,Infrastructure,Original defense-side source concept
