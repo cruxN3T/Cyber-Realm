@@ -8,22 +8,35 @@ When teaching the game, make this point early and repeat it during the first few
 
 This keeps the game simple enough for a 2-hour AWWA workshop while still teaching both sides of the tabletop scenario.
 
-## Product/rarity note: training boxes vs collector boxes
+## Product/rarity note: training boxes vs collector products
 
-For AWWA and other tabletop training boxes, the card mix should stay practical and training-focused.
+For AWWA and other tabletop training boxes, the card mix should stay practical, repeatable, and training-focused.
 
-Important note:
+Important product rule:
 
-> Training boxes should include Common, Uncommon, and Rare cards needed for the tabletop scenario. Legendary cards should be reserved for Collector Boxes unless a specific training scenario requires one.
+> All Training Boxes use Common cards only.
 
-This keeps training decks balanced, repeatable, and easier to teach. Collector Boxes can include higher-impact Legendary cards, alternate art, special scenarios, and premium versions without making the base training experience too complex or too swingy.
+Uncommon, Rare, and Legendary cards are reserved for non-training-box products, including:
+
+- Collector Boxes
+- Battle Decks
+- Starter Decks
+- Expansion Packs
+- Some Booster Packs
+
+This keeps Training Boxes consistent for workshops, classroom use, tabletop exercises, and utility training. Everyone receives the same core learning experience without swingy high-rarity cards changing the balance.
 
 Recommended explanation:
 
-- Common cards teach core concepts and appear often.
-- Uncommon cards introduce useful tools, operators, and scenario variety.
-- Rare cards create stronger but still teachable moments.
-- Legendary cards are special collector/scenario cards and should not be required for normal training-box play.
+- Common cards teach the required baseline concepts.
+- Training Boxes prioritize repeatable learning over collectible rarity.
+- Uncommon cards add variety and stronger mechanics for constructed/battle play.
+- Rare cards create more specialized or powerful scenario moments.
+- Legendary cards are premium, collector, scenario, or high-impact cards and should not be required for normal Training Box play.
+
+Presenter note:
+
+> The Training Box is not a booster product. It is a controlled tabletop training kit, so it uses Common cards only. Higher-rarity cards are for collector, battle, starter, expansion, and selected booster products.
 
 ## Red Team learning path
 
