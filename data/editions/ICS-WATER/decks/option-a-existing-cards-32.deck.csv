@@ -1,0 +1,47 @@
+deck_name,side,card_name,copies,card_type,role,lifecycle_stage,notes
+Option A Existing Cards 32,Blue Team,Well,1,Asset,Critical water source,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Water Tower,1,Asset,Scenario-critical public impact asset,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Pump Station,1,Asset,Operational flow asset,Recover,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Chlorination Unit,1,Asset,Water safety asset,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,RTU or PLC,1,Asset,Control system asset,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Gateway,1,Asset,Remote access pathway,Detect/Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Operator Laptop,1,Asset,Operational endpoint,Respond,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Basic Firewall,1,Asset,Network boundary control,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,SCADA Web Interface,1,Asset,Application surface,Detect,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Password Reset,1,Defense,Credential response,Respond/Recover,Existing uploaded card
+Option A Existing Cards 32,Blue Team,MFA,1,Defense,Credential protection,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Vendor Support Contract,1,Defense,Vendor-assisted recovery,Recover,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Port Closure,1,Defense,Exposure reduction,Respond/Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Port Scanner,1,Tool,Defensive discovery,Detect,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Deep Packet ICS Monitor,1,Tool,ICS traffic monitoring,Detect,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Antivirus,1,Tool,Endpoint containment,Respond/Recover,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Modbus,1,Protocol,ICS protocol risk,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Port 23,1,Protocol,Legacy exposure,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Telnet,1,Protocol,Legacy remote access risk,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Port 80,1,Protocol,Plain web exposure,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,HTTP,1,Protocol,Plain web access risk,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,IT Admin,1,Operator,Network defense operator,Respond,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Field Technician,1,Operator,Physical recovery operator,Recover,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Infrastructure Engineer,1,Operator,Engineering recovery operator,Recover/Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Operations Budget,6,Realm,Core utility resource,Reinforce,Existing uploaded card; duplicate to six total copies
+Option A Existing Cards 32,Blue Team,Capital Funding,1,Realm,Upgrade resource,Reinforce,Existing uploaded card
+Option A Existing Cards 32,Blue Team,Federal Assistance,1,Realm,Burst recovery resource,Recover/Reinforce,Existing uploaded card
+Option A Existing Cards 32,Red Team,NMAP,2,Attack,Port scanning,Recon,Existing uploaded card; duplicate to two total copies
+Option A Existing Cards 32,Red Team,OSINT,2,Attack,Public information gathering,Recon,Existing uploaded card; duplicate to two total copies
+Option A Existing Cards 32,Red Team,Downloaded Exploit,2,Attack,Public exploit use,Weaponize/Exploit,Existing uploaded card; duplicate to two total copies
+Option A Existing Cards 32,Red Team,Pre Built Malware Package,1,Attack,Commodity malware setup,Weaponize/Install,Existing uploaded card
+Option A Existing Cards 32,Red Team,Phishing Campaign,1,Attack,Social delivery,Delivery,Existing uploaded card
+Option A Existing Cards 32,Red Team,Malicious Link,2,Attack,Click-based delivery,Delivery,Existing uploaded card; duplicate to two total copies
+Option A Existing Cards 32,Red Team,Malicious Attachment,2,Attack,Attachment delivery,Delivery,Existing uploaded card; duplicate to two total copies
+Option A Existing Cards 32,Red Team,Vuln Exploit,2,Attack,Exploit exposed weakness,Exploit,Existing uploaded card; duplicate to two total copies
+Option A Existing Cards 32,Red Team,Cred Attack,2,Attack,Credential abuse,Exploit,Existing uploaded card; duplicate to two total copies
+Option A Existing Cards 32,Red Team,Spray Attack,2,Attack,Password spraying,Exploit,Existing uploaded card; duplicate to two total copies
+Option A Existing Cards 32,Red Team,RAT,1,Tool,Remote access tool,Install/C2,Existing uploaded card
+Option A Existing Cards 32,Red Team,C2 Communication,1,Asset,Command channel,C2,Existing uploaded card
+Option A Existing Cards 32,Red Team,C2,1,Asset,Command channel,C2,Existing uploaded card
+Option A Existing Cards 32,Red Team,C2 Backup Channel,1,Asset,Redundant command path,C2,Use second uploaded C2 image
+Option A Existing Cards 32,Red Team,System Outage,1,Event,Operational impact,Actions on Objectives,Existing uploaded card
+Option A Existing Cards 32,Red Team,Operations Budget,4,Realm,Core attacker resource,Weaponize,Existing uploaded card; duplicate to four total copies
+Option A Existing Cards 32,Red Team,Network Position,2,Realm,Network access resource,C2,Existing uploaded card; duplicate to two total copies
+Option A Existing Cards 32,Red Team,External Access,2,Realm,Internet access resource,Delivery,Existing uploaded card; duplicate to two total copies
+Option A Existing Cards 32,Red Team,App Access,2,Realm,Application access resource,Exploit,Existing uploaded card; duplicate to two total copies
