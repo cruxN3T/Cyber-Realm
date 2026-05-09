@@ -1,6 +1,8 @@
 # ICS-WATER Lifecycle Alignment
 
-ICS-WATER should intentionally map Red Team cards to the Cyber Kill Chain and Blue Team cards to the Operational Defense Lifecycle.
+ICS-WATER intentionally maps Red Team cards to the Cyber Kill Chain and Blue Team cards to the Operational Defense Lifecycle.
+
+The physical card designs may use lifecycle symbols/icons instead of printed lifecycle words. That is preferred because it keeps the card face clean while still making the tabletop training structure visible.
 
 ## Red Team: Cyber Kill Chain
 
@@ -22,6 +24,14 @@ Blue Team defender cards should map to one or more of these stages:
 2. Respond
 3. Recover
 4. Reinforce
+
+## Symbol rule
+
+Cards should use lifecycle symbols consistently.
+
+- Red Team symbols represent the Cyber Kill Chain stage.
+- Blue Team symbols represent the Operational Defense Lifecycle stage.
+- The public card database may describe lifecycle stages in text, but art prompts, Canva files, and production details stay outside the public repository.
 
 ## Design rule
 
@@ -69,11 +79,11 @@ A good card should answer:
 | Capital Funding | Realm | Reinforce |
 | Federal Assistance | Realm | Recover / Reinforce |
 
-## Current gap
+## Current coverage
 
 The first prototype has strong Recon, Exploit, Response, Recovery, and Reinforcement coverage.
 
-It needs more explicit cards for:
+It still needs deliberate playtest attention for:
 
 - Weaponize
 - Delivery
@@ -87,4 +97,4 @@ It needs more explicit cards for:
 
 Add lifecycle_stage as a column to future card files or maintain a lifecycle mapping file for each deck.
 
-This keeps the game useful for tabletop exercises and makes it easier to explain to water-sector and security audiences.
+This keeps the game useful for tabletop exercises and makes it easier to explain to water-sector and security audiences without crowding the card face.
