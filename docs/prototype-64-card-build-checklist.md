@@ -35,13 +35,13 @@ This checklist only tracks the safe public card names, counts, and playtest stat
 | [ ] | Vendor Support Contract | 1 | Defense | Vendor-assisted recovery |
 | [ ] | Port Closure | 1 | Defense | Exposure reduction |
 | [ ] | Port Scanner | 1 | Tool | Defensive discovery |
+| [ ] | Modbus Protocol | 1 | Protocol | ICS protocol risk |
+| [ ] | Port 23 | 1 | Protocol | Legacy exposure |
+| [ ] | Remote Terminal Protocol | 1 | Protocol | Legacy remote access risk |
+| [ ] | Port 80 | 1 | Protocol | Plain web exposure |
+| [ ] | Plain Web Protocol | 1 | Protocol | Plain web access risk |
 | [ ] | Deep Packet ICS Monitor | 1 | Tool | ICS traffic monitoring |
 | [ ] | Antivirus | 1 | Tool | Endpoint containment |
-| [ ] | Modbus | 1 | Protocol | ICS protocol risk |
-| [ ] | Port 23 | 1 | Protocol | Legacy exposure |
-| [ ] | Telnet | 1 | Protocol | Legacy remote access risk |
-| [ ] | Port 80 | 1 | Protocol | Plain web exposure |
-| [ ] | HTTP | 1 | Protocol | Plain web access risk |
 | [ ] | IT Admin | 1 | Operator | Network defense operator |
 | [ ] | Field Technician | 1 | Operator | Physical recovery operator |
 | [ ] | Infrastructure Engineer | 1 | Operator | Engineering recovery operator |
@@ -55,20 +55,20 @@ This checklist only tracks the safe public card names, counts, and playtest stat
 
 | Done | Card | Copies | Type | Notes |
 |---|---|---:|---|---|
-| [ ] | NMAP | 2 | Attack | Duplicate to two total copies |
-| [ ] | OSINT | 2 | Attack | Duplicate to two total copies |
+| [ ] | Network Scan | 2 | Attack | Duplicate to two total copies |
+| [ ] | Public Info Gathering | 2 | Attack | Duplicate to two total copies |
 | [ ] | Downloaded Exploit | 2 | Attack | Duplicate to two total copies |
 | [ ] | Pre Built Malware Package | 1 | Attack | Commodity malware setup |
 | [ ] | Phishing Campaign | 1 | Attack | Social delivery |
 | [ ] | Malicious Link | 2 | Attack | Duplicate to two total copies |
 | [ ] | Malicious Attachment | 2 | Attack | Duplicate to two total copies |
-| [ ] | Vuln Exploit | 2 | Attack | Duplicate to two total copies |
-| [ ] | Cred Attack | 2 | Attack | Duplicate to two total copies |
-| [ ] | Spray Attack | 2 | Attack | Duplicate to two total copies |
-| [ ] | RAT | 1 | Tool | Remote access tool |
+| [ ] | Vulnerability Exploit | 2 | Attack | Duplicate to two total copies |
+| [ ] | Credential Attack | 2 | Attack | Duplicate to two total copies |
+| [ ] | Password Spray | 2 | Attack | Duplicate to two total copies |
+| [ ] | Remote Access Tool | 1 | Tool | Remote access tool |
 | [ ] | C2 Communication | 1 | Asset | Command channel |
-| [ ] | C2 | 1 | Asset | Command channel |
-| [ ] | C2 Backup Channel | 1 | Asset | Backup command path |
+| [ ] | Command Channel | 1 | Asset | Command channel |
+| [ ] | Backup Command Channel | 1 | Asset | Backup command path |
 | [ ] | System Outage | 1 | Event | Operational impact |
 | [ ] | Operations Budget | 4 | Realm | Duplicate to four total copies |
 | [ ] | Network Position | 2 | Realm | Duplicate to two total copies |
@@ -91,6 +91,7 @@ Before the first guided test, confirm:
 - [ ] Lifecycle symbols are visible enough to support training
 - [ ] Realm colors are visible enough to support fast recognition
 - [ ] Card text is readable at card size
+- [ ] Card names use generic/IP-safe names where possible
 - [ ] No proprietary production workflow details are committed
 
 ---
