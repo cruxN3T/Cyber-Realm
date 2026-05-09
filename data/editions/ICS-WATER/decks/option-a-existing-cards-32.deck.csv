@@ -26,7 +26,7 @@ Option A Existing Cards 32,Blue Team,Infrastructure Engineer,1,Operator,Engineer
 Option A Existing Cards 32,Blue Team,Operations Budget,6,Realm,Core utility resource,Reinforce,Existing uploaded card; duplicate to six total copies
 Option A Existing Cards 32,Blue Team,Capital Funding,1,Realm,Upgrade resource,Reinforce,Existing uploaded card
 Option A Existing Cards 32,Blue Team,Federal Assistance,1,Realm,Burst recovery resource,Recover/Reinforce,Existing uploaded card
-Option A Existing Cards 32,Red Team,NMAP,2,Attack,Port scanning,Recon,Existing uploaded card; duplicate to two total copies
+Option A Existing Cards 32,Red Team,Network Scan,2,Attack,Port scanning,Recon,Generic replacement for tool-specific card name; duplicate to two total copies
 Option A Existing Cards 32,Red Team,OSINT,2,Attack,Public information gathering,Recon,Existing uploaded card; duplicate to two total copies
 Option A Existing Cards 32,Red Team,Downloaded Exploit,2,Attack,Public exploit use,Weaponize/Exploit,Existing uploaded card; duplicate to two total copies
 Option A Existing Cards 32,Red Team,Pre Built Malware Package,1,Attack,Commodity malware setup,Weaponize/Install,Existing uploaded card
