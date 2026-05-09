@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cyber Realm Card",
+  "type": "object",
+  "required": [
+    "card_id",
+    "edition",
+    "card_name",
+    "team",
+    "card_type",
+    "realm",
+    "cost",
+    "rules_text",
+    "rarity",
+    "status"
+  ],
+  "properties": {
+    "card_id": { "type": "string" },
+    "edition": { "type": "string" },
+    "card_name": { "type": "string" },
+    "team": { "type": "string", "enum": ["Red Team", "Blue Team", "Neutral"] },
+    "tier": { "type": "string" },
+    "card_type": {
+      "type": "string",
+      "enum": ["Realm", "Asset", "Attack", "Defense", "Tool", "Protocol", "Operator", "Event", "Legacy"]
+    },
+    "realm": {
+      "type": "string",
+      "enum": ["Cloud", "Internet", "Network", "Application", "Endpoint", "Infrastructure", "Legacy", "Neutral"]
+    },
+    "cost": { "type": "integer", "minimum": 0, "maximum": 10 },
+    "attack_points": { "type": ["integer", "null"], "minimum": 0, "maximum": 10 },
+    "defense_points": { "type": ["integer", "null"], "minimum": 0, "maximum": 10 },
+    "rules_text": { "type": "string", "maxLength": 220 },
+    "flavor_text": { "type": "string", "maxLength": 120 },
+    "learning_note": { "type": "string", "maxLength": 220 },
+    "rarity": { "type": "string", "enum": ["Common", "Uncommon", "Rare", "Legendary"] },
+    "status": { "type": "string", "enum": ["Draft", "Review", "Playtest", "Final"] }
+  }
+}
