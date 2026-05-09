@@ -1,0 +1,29 @@
+deck_name,side,card_id,card_name,copies,role,notes
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-001,Community Water Utility,3,Core Asset,Small utility resource engine
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-002,Unsupported HMI,2,Risky Asset,Legacy weak point for training
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-003,On-Call Operator,2,Operator,Clutch save and human response
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-004,Manual Override,3,Defense,Stops operational damage
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-005,Network Segmentation,2,Protocol,Limits spread and lateral movement
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-006,Restore from Backup,2,Tool,Recovery teaching card
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-B013,Asset Inventory,2,Tool,Reveals and protects assets
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-B014,MFA Rollout,2,Protocol,Counters remote access and credential abuse
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-B015,Vendor Access Review,2,Protocol,Counters vendor/remote access risk
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-B016,Patch Window,2,Defense,Protects outdated systems
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-B017,Firewall Rule Update,2,Defense,Blocks noisy external attacks
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-B018,Alarm Correlation,2,Protocol,Turns detection into card draw
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-B019,Local Knowledge,2,Operator,Small utility resilience card
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-B020,Mutual Aid Call,2,Event,Community support and recovery
+Small Utility vs Script Kiddie,Blue Team,ICS-WATER-B021,Engineering Workstation Cleanup,2,Tool,Removes malware or persistence
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-007,Port Scan,3,Recon,Noisy beginner recon
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-008,Default Login Attempt,3,Attack,Default credential lesson
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-009,Misconfigured Remote Access,3,Attack,Remote access risk
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-010,Public Exploit,3,Attack,Patch gap exploitation
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-R013,Internet Exposure Search,2,Recon,Internet exposure discovery
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-R014,Password Spray,2,Attack,Credential guessing pressure
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-R015,Phishing the Operator,2,Attack,Disables operator response
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-R016,Exposed Engineering Portal,2,Attack,Application exposure card
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-R017,Known Exploit Copy Paste,2,Attack,Low-skill public exploit use
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-R018,Noisy Malware Drop,2,Attack,Simple malware with detection tradeoff
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-R019,Flat Network Pivot,2,Attack,Teaches segmentation impact
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-R020,Credential Reuse,2,Attack,Teaches password reuse risk
+Small Utility vs Script Kiddie,Red Team,ICS-WATER-R021,Attacker Brag Post,2,Event,Red gets tempo but Blue gets detection
