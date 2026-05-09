@@ -13,14 +13,17 @@ The first active edition is **ICS-WATER**, a water-sector ICS/OT tabletop traini
 
 ## Realms
 
-Cyber Realm uses six core realms:
+Cyber Realm uses seven realm/color mappings:
 
-- Cloud
-- Internet
-- Network
-- Application
-- Endpoint
-- Infrastructure
+| Realm | Color |
+|---|---|
+| Infrastructure | Green |
+| Cloud | Yellow |
+| Internet | Blue |
+| Network | Black |
+| Application | White/Grey |
+| Endpoint | Red |
+| Legacy | Brown |
 
 ## Card types
 
