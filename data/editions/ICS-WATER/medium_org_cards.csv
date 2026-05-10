@@ -1,0 +1,53 @@
+Card Name,Utility Size,Category,Realm
+well,medium,asset,Infrastructure
+water tower,medium,asset,Infrastructure
+pump station,medium,asset,Infrastructure
+chlorination unit,medium,asset,Infrastructure
+RTU/PLC,medium,asset,Infrastructure
+Gateway,medium,asset,Infrastructure
+Access Point,medium,asset,Infrastructure
+Engineering Workstation,medium,asset,Infrastructure
+Treatment Plant,medium,asset,Infrastructure
+SCADA Web interface,medium,asset,Infrastructure
+Operator Laptop,medium,asset,Infrastructure
+Enterprise Firewall,medium,asset,Infrastructure
+Billing Database,medium,asset,Infrastructure
+Email Server,medium,asset,Infrastructure
+backup,medium,Defense,Infrastructure
+redundant backup,medium,Defense,Cloud
+MFA,medium,Defense,Infrastructure
+water quality monitor,medium,Defense,Infrastructure
+port scanner,medium,tool,Infrastructure
+vuln scanner,medium,tool,Network
+IDS,medium,tool,Infrastructure
+IOT scanner,medium,tool,Infrastructure
+modbus,medium,protocol,Infrastructure
+Port 443,medium,protocol,Network
+https,medium,protocol,Internet
+dnp3,medium,protocol,Infrastructure
+IT admin,medium,operator,Network
+OT Engineer,medium,operator,Infrastructure
+SOC Analyst,medium,operator,Infrastructure
+field tech,medium,operator,Infrastructure
+Operations Budget,medium,realm,Infrastructure
+Operations Budget,medium,realm,Infrastructure
+Operations Budget,medium,realm,Infrastructure
+Operations Budget,medium,realm,Infrastructure
+Operations Budget,medium,realm,Infrastructure
+Operations Budget,medium,realm,Infrastructure
+Operations Budget,medium,realm,Infrastructure
+Operations Budget,medium,realm,Infrastructure
+Capital Funding,medium,realm,Infrastructure
+Capital Funding,medium,realm,Infrastructure
+Capital Funding,medium,realm,Infrastructure
+Emergency Funding,medium,realm,Infrastructure
+Emergency Funding,medium,realm,Infrastructure
+Emergency Funding,medium,realm,Infrastructure
+Federal Assistance,medium,realm,Infrastructure
+Federal Assistance,medium,realm,Infrastructure
+Password Reset,small,Defense,Endpoint
+antivirus,small,Tools,Endpoint
+port closure,medium,defense,network
+Packet Analysis,medium,defense,network
+network monitoring,medium,defense,network
+packet capture,medium,tool,network
