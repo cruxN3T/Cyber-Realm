@@ -1,53 +1,41 @@
-Card Name,Utility Size,Category,Realm
-well,medium,asset,Infrastructure
-water tower,medium,asset,Infrastructure
-pump station,medium,asset,Infrastructure
-chlorination unit,medium,asset,Infrastructure
-RTU/PLC,medium,asset,Infrastructure
-Gateway,medium,asset,Infrastructure
-Access Point,medium,asset,Infrastructure
-Engineering Workstation,medium,asset,Infrastructure
-Treatment Plant,medium,asset,Infrastructure
-SCADA Web interface,medium,asset,Infrastructure
-Operator Laptop,medium,asset,Infrastructure
-Enterprise Firewall,medium,asset,Infrastructure
-Billing Database,medium,asset,Infrastructure
-Email Server,medium,asset,Infrastructure
-backup,medium,Defense,Infrastructure
-redundant backup,medium,Defense,Cloud
-MFA,medium,Defense,Infrastructure
-water quality monitor,medium,Defense,Infrastructure
-port scanner,medium,tool,Infrastructure
-vuln scanner,medium,tool,Network
-IDS,medium,tool,Infrastructure
-IOT scanner,medium,tool,Infrastructure
-modbus,medium,protocol,Infrastructure
-Port 443,medium,protocol,Network
-https,medium,protocol,Internet
-dnp3,medium,protocol,Infrastructure
-IT admin,medium,operator,Network
-OT Engineer,medium,operator,Infrastructure
-SOC Analyst,medium,operator,Infrastructure
-field tech,medium,operator,Infrastructure
-Operations Budget,medium,realm,Infrastructure
-Operations Budget,medium,realm,Infrastructure
-Operations Budget,medium,realm,Infrastructure
-Operations Budget,medium,realm,Infrastructure
-Operations Budget,medium,realm,Infrastructure
-Operations Budget,medium,realm,Infrastructure
-Operations Budget,medium,realm,Infrastructure
-Operations Budget,medium,realm,Infrastructure
-Capital Funding,medium,realm,Infrastructure
-Capital Funding,medium,realm,Infrastructure
-Capital Funding,medium,realm,Infrastructure
-Emergency Funding,medium,realm,Infrastructure
-Emergency Funding,medium,realm,Infrastructure
-Emergency Funding,medium,realm,Infrastructure
-Federal Assistance,medium,realm,Infrastructure
-Federal Assistance,medium,realm,Infrastructure
-Password Reset,small,Defense,Endpoint
-antivirus,small,Tools,Endpoint
-port closure,medium,defense,network
-Packet Analysis,medium,defense,network
-network monitoring,medium,defense,network
-packet capture,medium,tool,network
+deck,team,tier,copies,card_name,category,realm,color,phase,cost,attack_value,defense_value,game_text,flavor_text,learning_note,rarity,status,source_note
+Medium Org Defense,Blue Team,Medium Org,1,Well,Asset,Infrastructure,Green,Reinforce,1,,3,"At the start of your turn, generate 1 Infrastructure resource. If this Asset is destroyed, Blue Team loses 1 SCP.","The smallest source can become the most important asset.","Wells are critical physical assets that should be included in cyber and operational risk planning.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Water Tower,Asset,Infrastructure,Green,Reinforce,2,,5,"Scenario Asset. At the end of turn 6, if this Asset is active, Blue Team gains 2 SCP.","Public pressure rises when the tower is at risk.","Water storage assets connect cyber events to visible community impact.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Pump Station,Asset,Infrastructure,Green,Recover,2,,4,"Once per turn, move 1 Defense counter from this Asset to another Infrastructure Asset.","Flow control is resilience in motion.","Pump stations are operational choke points and should be protected as critical assets.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Chlorination Unit,Asset,Infrastructure,Green,Reinforce,2,,4,"The first time this Asset takes damage each turn, discard 1 card unless Field Technician or Infrastructure Engineer is active.","Safety depends on more than uptime.","Chemical treatment systems require strong monitoring because integrity failures can affect safety.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,RTU/PLC,Asset,Infrastructure,Green,Reinforce,1,,3,"Protocol cards attached to this Asset cost 1 less resource to play.","Small controllers carry big consequences.","RTUs and PLCs bridge cyber systems and physical operations in ICS environments.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Gateway,Asset,Network,Black,Detect/Reinforce,1,,3,"The first Internet Attack against this Asset deals 1 less damage.","Every path in needs a guardrail.","Gateways and remote access paths should be monitored and hardened.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Access Point,Asset,Network,Black,Reinforce,2,,3,"If Network Monitoring is active, the first Network Attack against this Asset each turn deals 1 less damage.","The wireless edge is still part of the plant.","Wireless access points should be inventoried, segmented, and monitored because they can bridge IT and OT environments.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,Engineering Workstation,Asset,Endpoint,Red,Reinforce,2,,4,"When you play a Protocol card, you may restore 1 Defense counter to one Infrastructure Asset.","Engineering access changes real-world behavior.","Engineering workstations are high-value systems because they can view or modify industrial control logic and configurations.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,Treatment Plant,Asset,Infrastructure,Green,Reinforce,3,,6,"Scenario Asset. At the end of turn 8, if this Asset is active, Blue Team gains 3 SCP. If destroyed, Blue Team loses 2 SCP.","The plant is where cyber becomes public safety.","Treatment plants concentrate operational risk and should receive layered protection, monitoring, and recovery planning.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,SCADA Web Interface,Asset,Application,White/Grey,Detect,2,,3,"If revealed by Recon, Red Team may draw 1 card unless MFA is active.","A useful dashboard can become a useful target.","Exposed SCADA interfaces increase risk when authentication and access control are weak.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Operator Laptop,Asset,Endpoint,Red,Respond,1,,2,"If an Operator is active, this Asset gains +1 Defense.","The laptop is small. The access is not.","Operator endpoints often become high-value targets because they touch operational systems.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Enterprise Firewall,Asset,Network,Black,Reinforce,3,,5,"Internet Attacks cost Red Team 1 additional resource. If IDS is active, Network Attacks against this Asset deal 1 less damage.","Segmentation buys time.","Firewalls and segmentation reduce attacker movement between enterprise IT and operational environments.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,Billing Database,Asset,Application,White/Grey,Respond,2,,4,"Credential Attacks against this Asset deal +1 damage unless MFA is active. If damaged, Blue Team discards 1 card.","Customer data became operational pressure.","Business systems can affect utility operations through billing, communications, and customer trust.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,Email Server,Asset,Internet,Blue,Respond,2,,4,"Delivery Attacks against Operators cost Red Team 1 less while this Asset is active. MFA cancels this bonus.","Every inbox is a doorway.","Email infrastructure is a common delivery path for phishing, malware, and credential theft.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,Backup,Defense,Infrastructure,Green,Recover,1,,,"Restore up to 2 Defense counters to one damaged Infrastructure Asset.","Recovery starts before the incident.","Backups support resilience only when they are tested, protected, and available during response.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,Redundant Backup,Defense,Cloud,Yellow,Recover,2,,,"Restore up to 3 Defense counters to one damaged Asset. If Backup is in your discard pile, return Backup to your hand.","One copy is a hope. Redundancy is a plan.","Redundant backups reduce recovery risk when local systems are encrypted, damaged, or unavailable.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,MFA,Defense,Application,White/Grey,Respond,2,,,"Reduce damage from Credential Attack or Password Spray by 1 and cancel that card's bonus effect. If Remote Access Tool is attached to the targeted Asset, detach it.","Something you know, something you have, something you are.","MFA helps reduce risk from guessed, reused, or stolen credentials.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Water Quality Monitor,Defense,Infrastructure,Green,Detect,2,,,"Cancel one Attack that targets Chlorination Unit or Treatment Plant, or reduce its damage by 3.","The sensor noticed what the screen missed.","Independent monitoring can detect unsafe process changes even when cyber systems are degraded.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,Port Scanner,Tool,Network,Black,Detect,1,,,"Reveal the top card of the Red Team deck. If it is a Recon card, draw 1 card. Then put the revealed card back on top or on the bottom of the Red Team deck. Discard Port Scanner after use.","Defenders can scan too.","Authorized scanning helps validate exposure and find services before attackers do.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Vulnerability Scanner,Tool,Network,Black,Detect,2,,,"Reveal the top 3 Red Team cards. You may discard one Exploit card revealed this way.","Known weaknesses are easier to fix before pressure arrives.","Vulnerability scanning helps prioritize patching and exposure reduction across IT and OT support systems.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,IDS,Tool,Network,Black,Detect,2,,,"The next Command and Control or Install card Red Team plays costs 1 additional resource. Draw 1 card if Deep Packet ICS Monitor is active.","A quiet alert can stop a loud incident.","Intrusion detection helps spot attacker behavior before it becomes operational impact.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,IoT Scanner,Tool,Infrastructure,Green,Detect,1,,,"Reveal one hidden Asset or Protocol. If it is Internet or Network realm, Port Closure costs 0 this turn.","Small devices leave big footprints.","IoT and OT asset discovery helps defenders find unmanaged devices and reduce blind spots.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,Modbus Protocol,Protocol,Infrastructure,Green,Reinforce,1,,,"Attach to RTU/PLC. That Asset gains +1 Defense but takes +1 damage from Recon-followed Attacks.","Simple protocols need careful boundaries.","Legacy ICS protocols may lack modern security features and require compensating controls.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Port 443,Protocol,Network,Black,Reinforce,1,,,"Attach to an Application or Internet Asset. That Asset gains +1 Defense. If revealed by Recon, Red Team may draw 1 card.","The safe-looking port still needs rules.","Encrypted web services still need access control, logging, and proper segmentation.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,HTTPS,Protocol,Internet,Blue,Reinforce,1,,,"Attach to SCADA Web Interface, Email Server, or Billing Database. That Asset gains +1 Defense. Public Info Gathering does not reveal it automatically.","Encryption helps, but it is not authorization.","HTTPS protects data in transit but does not replace authentication, authorization, or patching.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,DNP3,Protocol,Infrastructure,Green,Reinforce,1,,,"Attach to RTU/PLC or Treatment Plant. That Asset gains +1 Defense, but Recon against it may reveal one additional Asset.","Old signals still carry critical commands.","DNP3 and similar industrial protocols require segmentation, monitoring, and secure deployment practices.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,IT Admin,Operator,Network,Black,Respond,2,,3,"Once per turn, reduce Network Attack damage by 1.","Someone has to know where the cables go.","IT administrators support segmentation, account control, and response during incidents.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,OT Engineer,Operator,Infrastructure,Green,Recover/Reinforce,3,,4,"Once per turn, reduce damage to an Infrastructure Asset by 1. When you play DNP3 or Modbus Protocol, draw 1 card.","The engineer knows which alarm matters.","OT engineers connect cyber response to safe physical process decisions.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,SOC Analyst,Operator,Network,Black,Detect,2,,3,"When Red Team plays Recon or Command and Control, reveal the top Red Team card. You may put it on the bottom of the deck.","The alert became a decision.","SOC analysts help turn telemetry into timely response and containment.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,Field Technician,Operator,Infrastructure,Green,Recover,1,,2,"Restore 1 Defense to one Infrastructure Asset each turn.","Boots on the ground keep water moving.","Field staff are essential to physical validation and manual recovery during cyber incidents.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,8,Operations Budget,Realm,Infrastructure,Green,Reinforce,0,,,"Provides 1 Infrastructure resource.","Keeping the lights on is a strategy.","Operations funding supports routine maintenance and daily resilience.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,3,Capital Funding,Realm,Infrastructure,Green,Reinforce,0,,,"Provides 1 Infrastructure resource. If used for an Asset, that Asset enters with +1 Defense.","Big upgrades start with rare funding.","Capital funding helps replace or improve critical systems.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,3,Emergency Funding,Realm,Infrastructure,Green,Recover,0,,,"Provides 2 resources for a Respond or Recover card. Discard after use.","Emergency money is only useful when the plan exists.","Emergency funding helps utilities respond quickly but works best when response procedures are prepared.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,2,Federal Assistance,Realm,Infrastructure,Green,Recover/Reinforce,0,,,"Provides 2 Infrastructure resources for a Defense, Tool, or Recovery card. Discard after use.","Help arrives when preparation meets need.","External funding and assistance can improve recovery and resilience for small utilities.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Password Reset,Defense,Endpoint,Red,Recover,1,,,"Cancel one Credential Attack or restore 2 Defense to one Operator or Endpoint Asset.","Regaining control starts with the account.","Account recovery is part of containment when credentials are suspected to be compromised.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Antivirus,Defense,Endpoint,Red,Reinforce,1,,,"Attach to one Endpoint Asset. The first time Pre-Built Malware Package would damage that Asset each turn, reduce that damage by 2. You may discard Antivirus to remove one Remote Access Tool attached to that Asset.","Basic protection is better than wishful thinking.","Endpoint protection is a baseline control that reduces common malware and remote-access risk, but it should not be the only control.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Port Closure,Defense,Network,Black,Respond/Reinforce,1,,,"Cancel one Recon card or reduce one Network Attack by 2 damage.","Closed ports tell fewer stories.","Reducing unnecessary exposed services limits attacker options.",Common,Draft,Shared card from Small Org; keep text/cost consistent.
+Medium Org Defense,Blue Team,Medium Org,1,Packet Analysis,Defense,Network,Black,Detect,2,,,"Cancel one Command and Control card unless Red Team pays 1 additional Network resource.","The packets told the truth.","Packet analysis helps validate suspicious traffic and distinguish normal operations from attacker behavior.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,Network Monitoring,Defense,Network,Black,Detect,2,,,"The first Network Attack each turn deals 1 less damage. If IDS is active, draw 1 card when Red Team plays Recon.","Visibility turns surprise into response.","Network monitoring gives defenders early warning and supports incident investigation.",Common,Draft,Medium-only card.
+Medium Org Defense,Blue Team,Medium Org,1,Packet Capture,Tool,Network,Black,Detect,1,,,"Look at the top 2 Red Team cards. You may reveal one Command and Control card and discard it.","Capture first. Guess later.","Packet captures provide evidence for response tuning and post-incident lessons learned.",Common,Draft,Medium-only card.
