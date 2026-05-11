@@ -42,10 +42,63 @@ Each player has:
 Each turn has five simple phases:
 
 1. **Draw** — Draw 1 card.
-2. **Resource** — Play up to 1 Realm card.
-3. **Deploy** — Play Assets, Operators, Protocols, Tools, Defenses, Events, or Attacks by paying costs.
+2. **Resource** — Play up to 1 Realm/Budget card.
+3. **Deploy** — Play Assets, Operators, Protocols, Tools, Defenses, Events, or Attacks by paying the printed cost.
 4. **Conflict** — Resolve attacks, defenses, and card effects.
 5. **Cleanup** — Discard down to 7 cards if needed.
+
+## Cost and resource rules
+
+Cyber Realm uses Realm/Budget cards like mana sources.
+
+There are three basic cost types:
+
+1. **Free / no realm needed** — Cards with no cost can be played without using a Realm/Budget card.
+2. **Realm-specific cost** — If a card costs 2 Application, the player must use 2 Application resources. If it costs 1 Network, the player must use 1 Network resource.
+3. **Generic circle cost** — If a card has a number in a circle at the top right, the player may pay that many resources from any realm. A circle 1 costs any 1 resource. A circle 2 costs any 2 resources. A circle 3 costs any 3 resources.
+
+Realm/Budget cards provide resources:
+
+- **Operations Budget** provides 1 Infrastructure resource.
+- **Network Maintenance Budget** provides 1 Infrastructure resource OR 1 Network resource.
+- **Federal Assistance** provides 1 resource of any realm/color.
+
+Used Realm/Budget resources cannot be used again that turn. They refresh on the player's next turn unless the card says it is discarded after use.
+
+### Example hand
+
+If Blue Team draws:
+
+- HTTP
+- Port 80
+- Modbus TCP
+- IT Admin
+- Field Technician
+- Operations Budget
+- Network Maintenance Budget
+
+Then:
+
+- HTTP and Port 80 can be played for free if they have no realm cost.
+- Modbus TCP can be played with Operations Budget as 1 Infrastructure.
+- IT Admin can be played with Network Maintenance Budget as 1 Network.
+- Field Technician can be played by using Operations Budget as 1 Infrastructure and Network Maintenance Budget as 1 Infrastructure.
+
+The player cannot use the same budget resource twice in the same turn.
+
+## Default discard and field rules
+
+Unless a card says otherwise:
+
+- Realm/Budget cards stay in the Field.
+- Assets stay in the Field until destroyed.
+- Operators stay in the Field until destroyed, removed, or disabled by a card effect.
+- Protocols stay in the Field or attach to an Asset.
+- Attacks go to the discard pile after resolving.
+- Events go to the discard pile after resolving.
+- Tools go to the discard pile after resolving unless the card says it stays active or attaches.
+- Defenses go to the discard pile after resolving unless the card says it stays active or attaches.
+- Destroyed Assets, Operators, and attached Protocols move to the discard pile.
 
 ## Blue Team play pattern
 
@@ -66,14 +119,6 @@ Red Team should try to:
 - Pressure weak protocols like Telnet, HTTP, Port 23, and Port 80.
 - Disable Operators before damaging critical Assets.
 - Punish missing MFA, segmentation, and patching.
-
-## Resource rules
-
-- Realm cards provide resources.
-- A card's cost must be paid before it is played.
-- Operations Budget provides 1 Infrastructure resource.
-- Capital Funding helps deploy or strengthen Assets.
-- Federal Assistance provides a one-time burst for Defense, Tool, or Recovery cards.
 
 ## Basic combat rules
 
