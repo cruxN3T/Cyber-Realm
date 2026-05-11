@@ -16,8 +16,8 @@ Reduce the opposing player's SCP to 0, or complete the active Scenario Objective
 
 For the first test scenario, use **Water Tower Overflow**:
 
-- Red Team wins the scenario if Water Tower and Gateway are both damaged before turn 6.
-- Blue Team wins the scenario if Water Tower survives through turn 6.
+- Red Team wins the scenario if Water Tower and Gateway are both damaged by the end of turn 6.
+- Blue Team wins the scenario if Water Tower is not damaged by the end of turn 6.
 
 ## Setup
 
