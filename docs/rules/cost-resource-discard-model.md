@@ -69,6 +69,25 @@ The player chooses which resource it produces when they use it that turn.
 
 Provides 1 resource of any realm/color.
 
+## Script Kiddie resource rule for existing-card-only decks
+
+The current Script Kiddie card pool may be played without adding new card names by using a face-down resource rule.
+
+Once per turn during the Resource phase, Red Team may place one Attack or Event card from hand face-down as a Realm resource matching that card's printed Realm.
+
+Examples:
+
+- Port Scan may be placed face-down as 1 Internet resource.
+- Default Login Attempt may be placed face-down as 1 Application resource.
+- Open Remote Port may be placed face-down as 1 Network resource.
+- Public Exploit may be placed face-down as 1 Endpoint resource.
+- Stale Vendor Account may be placed face-down as 1 Infrastructure resource.
+- Old Protocol Abuse may be placed face-down as 1 Legacy resource.
+
+A face-down resource is no longer treated as an Attack or Event while it remains in the Field. It provides 1 matching realm resource each turn. It refreshes on Red Team's next turn like a normal Realm/Budget resource.
+
+This rule does not add new cards. It lets the existing Script Kiddie cards function as either an action or a resource, similar to a dual-use card economy.
+
 ## Resource use
 
 - Each available Realm/Budget resource can be used once per turn.
@@ -153,7 +172,7 @@ HTTP,Protocol,Internet,free,0,,attached
 Port 80,Protocol,Network,free,0,,attached
 Operations Budget,Realm,Infrastructure,free,0,,persistent
 Network Maintenance Budget,Realm,Network,free,0,,persistent
-Federal Assistance,Realm,Infrastructure,free,0,,one_time_resource
+Federal Assistance,Realm,Infrastructure,free,0,,persistent
 ```
 
 ## Simulator requirement
@@ -166,3 +185,4 @@ A valid Cyber Realm simulator must enforce:
 4. One use per resource per turn.
 5. Correct discard behavior.
 6. Persistent versus instant card behavior.
+7. Card text effects, including draw, reveal, disable, exhaust, recovery, and recursion effects.
