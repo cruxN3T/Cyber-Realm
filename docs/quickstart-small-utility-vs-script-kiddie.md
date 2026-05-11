@@ -16,8 +16,9 @@ Reduce the opposing player's SCP to 0, or complete the active Scenario Objective
 
 For the first test scenario, use **Water Tower Overflow**:
 
-- Red Team wins the scenario if Water Tower and Gateway are both damaged by the end of turn 6.
-- Blue Team wins the scenario if Water Tower is not damaged by the end of turn 6.
+- Red Team wins immediately if Red destroys any Blue Team Asset at any point.
+- Red Team also wins the scenario if Water Tower and Gateway are both damaged by the end of turn 6.
+- Blue Team wins the scenario if no Blue Team Asset has been destroyed and Water Tower is not damaged by the end of turn 6.
 
 ## Setup
 
@@ -163,12 +164,14 @@ Red Team should try to:
 - Pressure weak protocols like Telnet, HTTP, Port 23, and Port 80.
 - Disable Operators before damaging critical Assets.
 - Punish missing MFA, segmentation, and patching.
+- Destroy any Blue Team Asset when possible, because destroying any Blue Team Asset is an immediate Red Team win condition in this scenario.
 
 ## Basic combat rules
 
 - Attack cards target Assets unless the card says otherwise.
 - Defense cards can reduce, cancel, or redirect damage.
 - If an Asset reaches 0 Defense, it is destroyed and moved to the discard pile.
+- Red Team wins immediately if any Blue Team Asset is destroyed in the Water Tower Overflow scenario.
 - Some Assets cause SCP loss when destroyed.
 - Effects on cards override these basic rules.
 
