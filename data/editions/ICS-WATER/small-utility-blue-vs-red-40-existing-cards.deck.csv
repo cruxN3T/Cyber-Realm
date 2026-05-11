@@ -1,0 +1,56 @@
+team,card_name,copies,role,notes
+Blue Team,Operations Budget,5,Resource,Existing Infrastructure budget card
+Blue Team,Network Maintenance Budget,4,Resource,Existing Infrastructure or Network budget card
+Blue Team,Capital Funding,2,Resource,Existing Infrastructure budget card
+Blue Team,Federal Assistance,2,Resource,Existing any-realm assistance card
+Blue Team,Well,1,Asset,Existing Infrastructure asset
+Blue Team,Water Tower,1,Asset,Existing scenario critical asset
+Blue Team,Gateway,1,Asset,Existing scenario pathway asset
+Blue Team,RTU or PLC,1,Asset,Existing ICS controller asset
+Blue Team,Basic Firewall,2,Defense Asset,Existing generic circle 1 card
+Blue Team,SCADA Web Interface,1,Asset,Existing Application asset
+Blue Team,Password Reset,1,Defense,Existing Credential answer
+Blue Team,Basic MFA,1,Defense,Existing Credential and Remote Access counter
+Blue Team,Vendor Support Contract,1,Defense,Existing Infrastructure recovery
+Blue Team,Port Closure,2,Defense,Existing Network answer
+Blue Team,Port Scanner,1,Tool,Existing Defender recon
+Blue Team,Deep Packet ICS Monitor,1,Tool,Existing ICS monitoring
+Blue Team,Antivirus,1,Tool,Existing Malware mitigation
+Blue Team,Modbus TCP,1,Protocol,Existing ICS protocol risk/reward
+Blue Team,Port 23,1,Protocol,Existing free legacy risk
+Blue Team,Telnet,1,Protocol,Existing free legacy risk
+Blue Team,Port 80,1,Protocol,Existing free legacy risk
+Blue Team,HTTP,1,Protocol,Existing free legacy risk
+Blue Team,IT Admin,1,Operator,Existing Network defense support
+Blue Team,Field Technician,2,Operator,Existing Infrastructure recovery
+Blue Team,Infrastructure Engineer,1,Operator,Existing late-game recovery engine
+Blue Team,Pump Station,1,Asset,Existing Infrastructure resilience
+Blue Team,Chlorination Unit,1,Asset,Existing critical Infrastructure asset
+Blue Team,Operator Laptop,1,Asset,Existing Endpoint asset
+Red Team,Internet Exposure Search,4,Recon/Resource Candidate,Existing Internet recon; can support Internet resource density if using face-down resource rule
+Red Team,Port Scan,4,Recon/Resource Candidate,Existing Internet recon; can support Internet resource density if using face-down resource rule
+Red Team,Default Login Attempt,4,Attack/Resource Candidate,Existing Application pressure; can support Application resource density if using face-down resource rule
+Red Team,Open Remote Port,4,Attack/Resource Candidate,Existing Network pressure; can support Network resource density if using face-down resource rule
+Red Team,Forgotten Test Page,1,Attack/Resource Candidate,Existing Application pressure
+Red Team,Unsecured Status Page,1,Recon/Resource Candidate,Existing Internet reveal
+Red Team,Simple Defacement,1,Attack/Resource Candidate,Existing Internet pressure
+Red Team,Outdated Browser Plugin,1,Attack/Resource Candidate,Existing Endpoint pressure
+Red Team,Weak Password Policy,2,Event/Resource Candidate,Existing Application Credential boost
+Red Team,Password Spray,1,Attack/Resource Candidate,Existing Application pressure
+Red Team,Misconfigured Remote Access,1,Attack/Resource Candidate,Existing Network payoff
+Red Team,Known Exploit Copy Paste,1,Attack/Resource Candidate,Existing Endpoint payoff
+Red Team,Unpatched Service,1,Attack/Resource Candidate,Existing Endpoint pressure
+Red Team,Stale Vendor Account,1,Attack/Resource Candidate,Existing Infrastructure payoff
+Red Team,Flat Network Pivot,1,Attack/Resource Candidate,Existing rare Network finisher
+Red Team,Old Protocol Abuse,1,Attack/Resource Candidate,Existing Legacy punishment
+Red Team,Copycat Attack,1,Event/Resource Candidate,Existing attack recursion
+Red Team,Public Exploit,1,Attack/Resource Candidate,Existing Endpoint pressure
+Red Team,Phishing the Operator,1,Attack/Resource Candidate,Existing Internet Operator pressure
+Red Team,Exposed Web Interface,1,Attack/Resource Candidate,Existing Application payoff
+Red Team,Noisy Malware Drop,1,Attack/Resource Candidate,Existing Endpoint high damage
+Red Team,Credential Reuse,1,Attack/Resource Candidate,Existing Application payoff
+Red Team,Exposed Backup Share,1,Attack/Resource Candidate,Existing Cloud pressure
+Red Team,Attacker Brag Post,1,Event/Resource Candidate,Existing Internet draw event
+Red Team,Weak Firewall Rule,1,Attack/Resource Candidate,Existing Network anti-firewall card
+Red Team,Scripted Attack Run,1,Event/Resource Candidate,Existing Endpoint tempo event
+Red Team,Alert Fatigue,1,Event/Resource Candidate,Existing Network pressure event
