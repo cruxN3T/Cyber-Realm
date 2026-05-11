@@ -1,0 +1,47 @@
+team,card_name,copies,role,notes
+Blue Team,Operations Budget,4,Resource,Infrastructure resource consistency
+Blue Team,Network Maintenance Budget,3,Resource,Infrastructure or Network flexibility
+Blue Team,Capital Funding,1,Resource,Infrastructure asset support
+Blue Team,Federal Assistance,1,Resource,Any-realm fixer
+Blue Team,Well,1,Asset,Infrastructure resource and small utility asset
+Blue Team,Water Tower,1,Asset,Scenario critical asset
+Blue Team,Gateway,1,Asset,Scenario pathway asset
+Blue Team,RTU or PLC,1,Asset,ICS protocol anchor
+Blue Team,Basic Firewall,2,Defense Asset,Generic cost defensive tax
+Blue Team,Field Technician,2,Operator,Infrastructure recovery
+Blue Team,IT Admin,1,Operator,Network attack reduction
+Blue Team,Port Closure,2,Defense,Network attack and recon answer
+Blue Team,Vendor Support Contract,1,Defense,Infrastructure recovery burst
+Blue Team,Basic MFA,1,Defense,Credential and remote access counter
+Blue Team,Password Reset,1,Defense,Credential answer or endpoint recovery
+Blue Team,Antivirus,1,Tool,Malware mitigation
+Blue Team,Port Scanner,1,Tool,Defender recon
+Blue Team,Modbus TCP,1,Protocol,ICS protocol with risk/reward
+Blue Team,Port 23,1,Protocol,Free legacy risk
+Blue Team,Telnet,1,Protocol,Free legacy risk
+Blue Team,Port 80,1,Protocol,Free legacy risk
+Blue Team,HTTP,1,Protocol,Free legacy risk
+Blue Team,Pump Station,1,Asset,Infrastructure resilience
+Blue Team,Infrastructure Engineer,1,Operator,Late-game recovery engine
+Red Team,Public Internet Access,3,Resource,Internet pressure
+Red Team,Shared Hosting Access,2,Resource,Internet or Application flexibility
+Red Team,Exposed Remote Path,2,Resource,Internet or Network flexibility
+Red Team,Compromised Endpoint,2,Resource,Endpoint or Application flexibility
+Red Team,Leaked Vendor Access,1,Resource,Network or Infrastructure bridge
+Red Team,Copy-Paste Toolkit,1,Resource,Endpoint or Internet bridge
+Red Team,Credential Dump,1,Resource,Application or Network bridge
+Red Team,Internet Exposure Search,2,Recon,Find assets and draw
+Red Team,Port Scan,2,Recon,Reveal assets
+Red Team,Open Remote Port,2,Attack,Early Gateway pressure
+Red Team,Default Login Attempt,2,Attack,Cheap credential pressure
+Red Team,Forgotten Test Page,1,Attack,Application pressure
+Red Team,Unsecured Status Page,1,Recon,Infrastructure/protocol reveal
+Red Team,Weak Password Policy,1,Event,Credential damage boost
+Red Team,Password Spray,1,Attack,Operator disable pressure
+Red Team,Misconfigured Remote Access,1,Attack,Network attack payoff
+Red Team,Known Exploit Copy Paste,1,Attack,Endpoint payoff after recon
+Red Team,Unpatched Service,1,Attack,General asset pressure
+Red Team,Stale Vendor Account,1,Attack,Infrastructure payoff
+Red Team,Flat Network Pivot,1,Attack,Rare scenario finisher
+Red Team,Old Protocol Abuse,1,Attack,Legacy punishment
+Red Team,Attacker Brag Post,1,Event,Card draw with defender opportunity
