@@ -6,7 +6,7 @@ This quickstart is for the first ICS-WATER playtest mode.
 
 - **Blue Team:** Small Utility
 - **Red Team:** Script Kiddie
-- **Deck size:** 32 cards per side
+- **Deck size:** 32 cards per side for the first starter test, or use the 40-card existing-card-only deck for expanded balance testing
 - **Starting SCP:** 20 per player
 - **Starting hand:** 7 cards
 
@@ -21,11 +21,12 @@ For the first test scenario, use **Water Tower Overflow**:
 
 ## Setup
 
-1. Blue Team uses `cards.small-utility-blue.csv` and the Blue Team side of `small-utility-blue-vs-red-32.deck.csv`.
-2. Red Team uses `cards.small-utility-red.csv` and the Red Team side of `small-utility-blue-vs-red-32.deck.csv`.
+1. Blue Team uses `cards.small-utility-blue.csv` and the Blue Team side of the selected deck file.
+2. Red Team uses `cards.small-utility-red.csv` and the Red Team side of the selected deck file.
 3. Shuffle each deck.
 4. Each player draws 7 cards.
 5. Blue Team goes first for the first playtest.
+6. Both players must maintain a 7-card hand target. Each player draws 1 card at the start of their turn. If a player has more than 7 cards during Cleanup, they must discard down to 7.
 
 ## Card zones
 
@@ -42,10 +43,26 @@ Each player has:
 Each turn has five simple phases:
 
 1. **Draw** — Draw 1 card.
-2. **Resource** — Play up to 1 Realm/Budget card.
+2. **Resource** — Play up to 1 Realm/Budget card, or use the applicable resource rule for the deck.
 3. **Deploy** — Play Assets, Operators, Protocols, Tools, Defenses, Events, or Attacks by paying the printed cost.
 4. **Conflict** — Resolve attacks, defenses, and card effects.
 5. **Cleanup** — Discard down to 7 cards if needed.
+
+## First-turn timing
+
+Blue Team goes first.
+
+- On Blue Team's first turn, Blue may play/place a card, but that card's effect does not activate until Blue Team's second turn unless the card says otherwise.
+- Red Team may attack on Red Team's first turn if Red can legally pay the cost and the card text allows the play.
+- From turn 2 onward, cards resolve according to their printed text and normal timing.
+
+## Hand size and draw rules
+
+- Each player starts with 7 cards in hand.
+- Each player draws 1 card at the start of their turn.
+- If a player has more than 7 cards in hand during Cleanup, they must discard down to 7.
+- Card text that draws cards still applies. Extra cards are kept until Cleanup, then the player discards down to 7.
+- Discard decisions should follow strategy based on the player's current hand, board state, resource needs, and scenario objective.
 
 ## Cost and resource rules
 
@@ -64,6 +81,15 @@ Realm/Budget cards provide resources:
 - **Federal Assistance** provides 1 resource of any realm/color.
 
 Used Realm/Budget resources cannot be used again that turn. They refresh on the player's next turn unless the card says it is discarded after use.
+
+### Existing-card-only Script Kiddie resource rule
+
+For existing-card-only Red Team decks, Red may place one Attack or Event card from hand face-down as a Realm resource matching that card's printed Realm during the Resource phase.
+
+- The face-down card is no longer treated as an Attack or Event while it is in the Field.
+- It provides 1 matching realm resource each turn.
+- It can be used the turn it is placed unless a scenario says otherwise.
+- Red must choose whether a card is more valuable as a resource or as an effect based on the current hand and board state.
 
 ### Example hand
 
@@ -85,6 +111,24 @@ Then:
 - Field Technician can be played by using Operations Budget as 1 Infrastructure and Network Maintenance Budget as 1 Infrastructure.
 
 The player cannot use the same budget resource twice in the same turn.
+
+## Card text priority
+
+Card text matters. If a card's printed rules text conflicts with these basic rules, the card text wins.
+
+Simulation and playtesting should resolve the card text, including:
+
+- Draw effects
+- Reveal effects
+- Disable effects
+- Exhaust effects
+- Recovery effects
+- Damage modifiers
+- Attack restrictions
+- Recursion effects
+- Hand reveal or discard effects
+
+Strategy should be based on the player's current hand, current Field, revealed information, resource availability, and scenario objective.
 
 ## Default discard and field rules
 
