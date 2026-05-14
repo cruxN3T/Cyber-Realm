@@ -1,0 +1,285 @@
+edition: ICS-WATER
+matchup: Medium Organization vs Hacktivist
+attacker_deck: Hacktivist
+card_range: 41-60
+notes: >
+  These cards are tuned for a Hacktivist attacker against a Medium Organization defender.
+  Baseline Hacktivist should be disruptive and opportunistic, not APT-level stealthy.
+
+cards:
+  - id: ICSW-041
+    name: System Reset
+    current_type: Tool - ICS
+    recommended_type: Attack - Impact
+    realm: Infrastructure
+    include_in_hacktivist: true
+    role: Noisy disruption finisher
+    kill_chain_phase: Actions on Objectives
+    recommended_text: >
+      Target 1 active ICS Asset. That Asset becomes inactive for 1 turn.
+      If Remote Access, RDP, or Network Position is active, defender also loses 1 SCP.
+      Discard after use.
+    balance_notes: >
+      Keep this as a one-turn disruption, not permanent damage. This fits Hacktivist if it requires prior access.
+
+  - id: ICSW-042
+    name: Application Access
+    current_type: Realm - Application
+    recommended_type: Realm - Application
+    realm: Application
+    include_in_hacktivist: true
+    role: Resource
+    kill_chain_phase: Resource
+    recommended_text: Add 1 Application Realm resource.
+    balance_notes: Use as standard resource. No chain requirement.
+
+  - id: ICSW-043
+    name: Firewall Misconfiguration
+    current_type: Attack - Delivery
+    recommended_type: Vulnerability - Network/Application
+    realm: Infrastructure
+    include_in_hacktivist: true
+    role: Access enabler
+    kill_chain_phase: Initial Access
+    recommended_text: >
+      Reduce Defense of 1 public-facing or remote-access Asset by 2 until the end of your next turn.
+      If Aux Scanner, Shodan, or Nmap is active, you may target that Asset directly next turn.
+      Defender may discard this effect by playing Firewall Rule Update or Security Audit.
+    balance_notes: >
+      This is better as a vulnerability/misconfiguration, not Delivery. It should enable RDP, External Access, or Unsecured Remote Access.
+
+  - id: ICSW-044
+    name: RDP
+    current_type: Attack - Delivery
+    recommended_type: Access - Remote Service
+    realm: Infrastructure
+    include_in_hacktivist: true
+    role: Remote access pivot
+    kill_chain_phase: Initial Access
+    recommended_text: >
+      If Firewall Misconfiguration, Credential Harvesting, or Password Cracker was played this turn or last turn,
+      gain Remote Access to 1 non-PLC Asset. Exploits against that Asset gain +1 Attack.
+      Discard if MFA or Secure Remote Access Gateway is deployed.
+    balance_notes: >
+      Do not allow RDP to directly control PLCs. It should pivot into Network Position or HMI access.
+
+  - id: ICSW-045
+    name: C2 Communication
+    current_type: Attack - Command and Control
+    recommended_type: Attack - Command and Control
+    realm: Internet
+    include_in_hacktivist: true
+    role: Chain amplifier
+    kill_chain_phase: Command and Control
+    recommended_text: >
+      Attach to 1 compromised Asset. While active, the attacker may chain 1 additional Attack card against that Asset each turn.
+      Defender may remove this with Network Monitor, EDR Alert, Firewall Rule Update, or Incident Responder.
+    balance_notes: >
+      Hacktivist C2 should be fragile and noisy. It enables Website Defacement, DDoS coordination, or System Reset.
+
+  - id: ICSW-046
+    name: Cloud Presence
+    current_type: Realm
+    recommended_type: Realm - Cloud
+    realm: Cloud
+    include_in_hacktivist: true
+    role: Resource
+    kill_chain_phase: Resource
+    recommended_text: Add 1 Cloud Realm resource.
+    balance_notes: Use as standard resource.
+
+  - id: ICSW-047
+    name: Website Defacement
+    current_type: Attack - Internet
+    recommended_type: Attack - Impact
+    realm: Internet
+    include_in_hacktivist: true
+    role: Public pressure / reputation hit
+    kill_chain_phase: Actions on Objectives
+    recommended_text: >
+      Requires Application Access plus Exploit, Credential Harvesting, or C2 Communication this turn.
+      Target 1 public-facing Asset. Defender loses 1 SCP and cannot use that Asset ability next turn.
+      If Cloud Presence is active, defender loses +1 SCP.
+    balance_notes: >
+      Good Hacktivist objective. Keep it public-facing; do not make it an ICS control action.
+
+  - id: ICSW-048
+    name: Circuit Breaker Shutdown
+    current_type: Event - ICS Water
+    recommended_type: Event - Impact
+    realm: Infrastructure
+    include_in_hacktivist: true
+    role: Emergency disruption
+    kill_chain_phase: Actions on Objectives
+    recommended_text: >
+      Requires Network Position or Physical Control. Target 1 Infrastructure or HMI-related Asset.
+      That Asset becomes inactive for 1 turn. All attacks against it are nullified while inactive.
+      Defender loses 1 SCP.
+    balance_notes: >
+      Keep temporary. Permanent shutdown or equipment damage belongs outside baseline Hacktivist.
+
+  - id: ICSW-049
+    name: DDoS on HMI
+    current_type: Event - ICS Water
+    recommended_type: Attack - Impact
+    realm: Internet
+    include_in_hacktivist: true
+    role: Availability pressure
+    kill_chain_phase: Actions on Objectives
+    recommended_text: >
+      Requires DDoS Botnet Setup, LOIC, HOIC, or HULK. Target 1 HMI-related Asset.
+      That Asset cannot activate abilities or be used for 1 turn.
+      Roll a d20. On 10+, defender loses 2 SCP. On 1-9, defender loses 1 SCP.
+    balance_notes: >
+      Strong Hacktivist card. Require a DDoS setup/tool chain so it is not free disruption.
+
+  - id: ICSW-050
+    name: Valve Malfunction Trigger
+    current_type: Event - ICS Water
+    recommended_type: Attack - Impact
+    realm: Infrastructure
+    include_in_hacktivist: true
+    role: Conditional ICS disruption
+    kill_chain_phase: Actions on Objectives
+    recommended_text: >
+      Requires PLC Hijacker, Unsecured Remote Access, or Network Position.
+      Target 1 Water Asset. It loses -2 Defense this turn and cannot activate abilities next turn.
+      If paired with PLC Hijacker, defender loses 1 SCP. Do not double this effect.
+    balance_notes: >
+      Remove the old double-effect rule. Doubling with PLC Hijacker or DDoS can snowball too hard.
+
+  - id: ICSW-051
+    name: Internet
+    current_type: Realm
+    recommended_type: Realm - Internet
+    realm: Internet
+    include_in_hacktivist: true
+    role: Resource
+    kill_chain_phase: Resource
+    recommended_text: Add 1 Internet Realm resource.
+    balance_notes: Use as standard resource.
+
+  - id: ICSW-052
+    name: Internet
+    current_type: Realm
+    recommended_type: Realm - Internet
+    realm: Internet
+    include_in_hacktivist: true
+    role: Resource
+    kill_chain_phase: Resource
+    recommended_text: Add 1 Internet Realm resource.
+    balance_notes: Duplicate resource art is fine if deck needs multiple Internet resources.
+
+  - id: ICSW-053
+    name: PLC Hijacker
+    current_type: Operator - ICS Water
+    recommended_type: Operator - ICS Water
+    realm: Infrastructure
+    include_in_hacktivist: conditional
+    role: High-impact operator
+    kill_chain_phase: Exploitation / Actions on Objectives
+    attack: 0
+    defense: 8
+    recommended_text: >
+      Play only after Network Position, Unsecured Remote Access, or Rogue Workstation is active.
+      Once per turn, target 1 PLC or Water Asset. Roll a d20 against the defender.
+      If attacker wins, target loses -3 Defense and becomes inactive for 1 turn.
+      If defender wins, this attack fails and attacker draws 1 card.
+    balance_notes: >
+      This is powerful for Hacktivist. Keep it as rare/legendary or scenario-limited. Do not combine with PLC Injector in Hacktivist baseline.
+
+  - id: ICSW-054
+    name: Phishing Campaign
+    current_type: Attack - Delivery
+    recommended_type: Attack - Delivery
+    realm: Internet
+    include_in_hacktivist: true
+    role: Initial access setup
+    kill_chain_phase: Delivery
+    recommended_text: >
+      Choose 1 Defender Operator or user-facing Asset. Roll a d20.
+      On 10+, place 1 Credential token on that target.
+      On 15+, also search your deck or discard for Credential Harvesting and add it to your hand.
+    balance_notes: >
+      Good baseline Hacktivist starter. Should chain into Credential Harvesting, Fake Login Page, Malicious Link, or RDP.
+
+  - id: ICSW-055
+    name: Phishing Campaign
+    current_type: Attack - Delivery
+    recommended_type: Attack - Delivery
+    realm: Internet
+    include_in_hacktivist: true
+    role: Initial access setup
+    kill_chain_phase: Delivery
+    recommended_text: >
+      Choose 1 Defender Operator or user-facing Asset. Roll a d20.
+      On 10+, place 1 Credential token on that target.
+      On 15+, also search your deck or discard for Credential Harvesting and add it to your hand.
+    balance_notes: Duplicate card is allowed if Hacktivist deck needs consistency.
+
+  - id: ICSW-056
+    name: Social Engineer
+    current_type: Operator - Internet
+    recommended_type: Operator - Internet
+    realm: Internet
+    include_in_hacktivist: true
+    role: Credential pressure operator
+    kill_chain_phase: Reconnaissance / Delivery
+    attack: 0
+    defense: 8
+    recommended_text: >
+      Once per turn, choose 1 card to discard from your hand, then draw 1 card.
+      If Phishing Campaign, Fake Login Page, or Typosquatting is active, place 1 Credential token on a user-facing Asset.
+      If defender plays Security Awareness Training, this ability cannot be used next turn.
+    balance_notes: >
+      Strong fit for Hacktivist. Tie ability to credential chain so it does more than generic hand swap.
+
+  - id: ICSW-057
+    name: Endpoint Control
+    current_type: Realm - Endpoint
+    recommended_type: Realm - Endpoint
+    realm: Endpoint
+    include_in_hacktivist: true
+    role: Resource
+    kill_chain_phase: Resource
+    recommended_text: Add 1 Endpoint Realm resource.
+    balance_notes: Use as standard resource.
+
+  - id: ICSW-058
+    name: External Access
+    current_type: Realm - Internet
+    recommended_type: Dual Realm - Internet / Infrastructure
+    realm: Internet
+    include_in_hacktivist: true
+    role: Resource and access setup
+    kill_chain_phase: Resource / Initial Access
+    recommended_text: >
+      Add 1 Internet resource and either 1 Infrastructure or 1 Endpoint resource.
+      If RDP or Unsecured Remote Access is in play, you may mark 1 public-facing Asset as Exposed until end of turn.
+    balance_notes: >
+      This is a strong bridge card. Keep it as uncommon/rare, not a basic resource.
+
+  - id: ICSW-059
+    name: Infrastructure
+    current_type: Realm - Water
+    recommended_type: Realm - Infrastructure
+    realm: Infrastructure
+    include_in_hacktivist: true
+    role: Resource
+    kill_chain_phase: Resource
+    recommended_text: Add 1 Infrastructure Realm resource.
+    balance_notes: Rename subtype from Water to Infrastructure for consistency unless Water is a special resource class.
+
+  - id: ICSW-060
+    name: Network Position
+    current_type: Realm - Network
+    recommended_type: Dual Realm - Network / Infrastructure
+    realm: Network
+    include_in_hacktivist: true
+    role: Pivot resource
+    kill_chain_phase: Lateral Movement
+    recommended_text: >
+      Add 1 Network resource and either 1 Infrastructure or 1 Internet resource.
+      If Remote Access, RDP, or Rogue Workstation is active, attacker may target one internal Asset next turn.
+    balance_notes: >
+      This should be the bridge from external compromise to ICS pressure.
